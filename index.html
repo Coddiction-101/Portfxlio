@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Modern Portfolio Design</title>
+    
+    <title>Gulshan | Modern Portfolio</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><i class="ri-xrp-line"></i>Coddiction</div>
+            <div class="logo"><i class="ri-xrp-line"></i> Coddiction</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,44 +26,109 @@
     <main id="home">
         <section class="hero">
             <h1>Hey, I'm Gulshan</h1>
-            <p>I'm a developer passionate about building clean and functional web experiences.</p>
-            <button>View my Work</button>
+            <p>Final-year BCA student building real-world projects while mastering problem-solving fundamentals.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View my Work</a>
+                <a href="https://github.com/Coddiction-101" target="_blank" class="github-link">
+                    <i class="ri-github-fill"></i> GitHub Profile
+                </a>
+            </div>
         </section>
 
         <section id="about" class="about">
             <h2>About me</h2>
-            <p>I'm currently learning the ropes of web development, focusing on creating modern, responsive designs.</p>
+            <p>I'm currently learning the ropes of web development, focusing on creating modern, responsive designs. I
+                love turning complex problems into simple, beautiful, and intuitive designs.</p>
         </section>
 
         <section id="projects" class="projects">
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <article class="project-card">
-                    <h3>Project One</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
+                    <div class="project-img">
+                        <img src="https://i.pinimg.com/1200x/3f/be/b7/3fbeb75d86bbca17a3b812630b7632e8.jpg"
+                            alt="Commit / Task Manager">
+                    </div>
+                    <div class="project-info">
+                        <h3>Commit / Task Manager</h3>
+                        <p>A clean, modern, and responsive task management application focused on productivity and
+                            simplicity.</p>
+                        <div class="project-links">
+                            <a href="https://commit-task-manager.netlify.app/" target="_blank"><i
+                                    class="ri-external-link-line"></i> Demo</a>
+                            <a href="https://github.com/Coddiction-101/Frontend-Projects/tree/main/TaskManager"
+                                target="_blank"><i class="ri-github-line"></i> Repo</a>
+                        </div>
+                    </div>
                 </article>
+
                 <article class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Another cool project that showcases my skills in HTML and CSS.</p>
+                    <div class="project-img">
+                        <img src="https://i.pinimg.com/736x/48/10/79/48107979052c9e92fb4316fe55114e64.jpg"
+                            alt="Stoic Notes">
+                    </div>
+                    <div class="project-info">
+                        <h3>Stoic Notes</h3>
+                        <p>A modern, minimal, responsive task management web app inspired by Stoic simplicity. Organize
+                            tasks with clarity.</p>
+                        <div class="project-links">
+                            <a href="https://stoic-tasks.netlify.app/" target="_blank"><i
+                                    class="ri-external-link-line"></i> Demo</a>
+                            <a href="https://github.com/Coddiction-101/Frontend-Projects/tree/main/Stoic"
+                                target="_blank"><i class="ri-github-line"></i> Repo</a>
+                        </div>
+                    </div>
                 </article>
+
                 <article class="project-card">
-                    <h3>Project Three</h3>
-                    <p>A third project to round out the portfolio grid.</p>
+                    <div class="project-img">
+                        <img src="https://i.pinimg.com/1200x/4c/7d/41/4c7d4101c07f5c570d877a0b3eff37ea.jpg"
+                            alt="Mini Kanban Board">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini Kanban Board</h3>
+                        <p>A lightweight Kanban task manager built to learn core frontend skills through a practical
+                            learning journey.</p>
+                        <div class="project-links">
+                            <a href="https://kanban-board-ver1.netlify.app/" target="_blank"><i
+                                    class="ri-external-link-line"></i> Demo</a>
+                            <a href="https://github.com/Coddiction-101/Frontend-Projects/tree/main/Kanban-Board"
+                                target="_blank"><i class="ri-github-line"></i> Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="https://i.pinimg.com/736x/ef/33/02/ef3302c63cb53990cc2d2507a91683c0.jpg"
+                            alt="Quiz Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Quiz Game</h3>
+                        <p>An interactive web quiz game testing knowledge across topics, featuring real-time scoring and
+                            responsive design.</p>
+                        <div class="project-links">
+                            <a href="https://quiz-game-v1.netlify.app/" target="_blank"><i
+                                    class="ri-external-link-line"></i> Demo</a>
+                            <a href="https://github.com/Coddiction-101/Frontend-Projects/tree/main/QuizGame"
+                                target="_blank"><i class="ri-github-line"></i> Repo</a>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <h2>Get in Touch</h2>
-            <form>
-                <label for="name">Name:</label>
+            <form class="contact-form">
+                <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Your Name" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Your Email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" placeholder="Your message..."></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your message..."></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
