@@ -1,5 +1,7 @@
 # 🚀 Modern Portfolio Design - Coddiction
 
+**Live Demo:** [personalpxrtfolio.netlify.app](https://personalpxrtfolio.netlify.app/)
+
 A clean, minimal, and professional personal portfolio website built with semantic HTML and custom CSS. This project showcases my journey in frontend development and my focus on building responsive, user-centric web experiences.
 
 ## 🛠️ Tech Stack
@@ -25,19 +27,15 @@ A clean, minimal, and professional personal portfolio website built with semanti
 - [x] **Minimalist Theme**: Applied a soft background (`#fafafa`) and dark accents (`#111`) for a modern look.
 
 ### Phase 3: Polish & Responsiveness ✅
-- [x] **Smooth Scrolling**: Implemented `scroll-behavior: smooth` for seamless navigation between sections.
-- [x] **Mobile First**: Added Media Queries to ensure the site is fully responsive on smartphones and tablets.
-- [x] **Hover Effects**: Added "bouncy" transitions and lift effects to project cards for better interactivity.
+- [x] **Smooth Scrolling**: Implemented `scroll-behavior: smooth` for seamless navigation.
+- [x] **Mobile First**: Added Media Queries to ensure the site is fully responsive on all devices.
+- [x] **Hover Effects**: Added "bouncy" transitions and lift effects to project cards.
 - [x] **Content Update**: Added real project details, live demo links, and GitHub repository links.
 
 ## 🚀 Future Features (Roadmap)
 - [ ] **Dark Mode Toggle**: Allow users to switch between light and dark themes.
-- [ ] **Scroll Animations**: Add "Fade-in" effects using Intersection Observer API as the user scrolls down.
-- [ ] **Custom Cursor**: Implement a unique, branded cursor for a more immersive experience.
-- [ ] **Blog Section**: A simple area to share "Stoic Notes" or development thoughts.
-- [ ] **JavaScript Interactivity**: Add a "Back to Top" button and a mobile hamburger menu.
-
----
-*“Simplicity is the ultimate sophistication.”* — Leonardo da Vinci
+- [ ] **Scroll Animations**: Add "Fade-in" effects using Intersection Observer API.
+- [ ] **Custom Cursor**: Implement a unique, branded cursor.
+- [ ] **JavaScript Interactivity**: Add a mobile hamburger menu and scroll-to-top button.
 
 ---
