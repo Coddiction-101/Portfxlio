@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    
+
     <title>Gulshan | Modern Portfolio</title>
 </head>
 
@@ -14,12 +14,22 @@
     <header>
         <nav>
             <div class="logo"><i class="ri-xrp-line"></i> Coddiction</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="theme-toggle" id="theme-toggle">
+                        <i class="ri-moon-line" id="theme-icon"></i>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -136,7 +146,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Gulshan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" target="_blank" title="GitHub"><i class="ri-github-line"></i></a>
+            <a href="#" target="_blank" title="Linkedin"><i class="ri-linkedin-line"></i></a>
+            <a href="#" target="_blank" title="Leetcode"><i class="ri-code-box-line"></i></a>
+        </div>
+        <p>&copy; 2026 Coddiction.</p>
     </footer>
 </body>
 
