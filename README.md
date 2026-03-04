@@ -5,8 +5,10 @@
 A clean, minimal, and professional personal portfolio website built with semantic HTML and custom CSS. This project showcases my journey in frontend development and my focus on building responsive, user-centric web experiences.
 
 ## 🛠️ Tech Stack
+
 - **HTML5**: Semantic structure for SEO and accessibility.
 - **CSS3**: Modern layout techniques (Flexbox & Grid), custom animations, and responsive design.
+- **JavaScript (ES6+)**: Theme switching logic, mobile navigation, and interactive UI elements.
 - **Remix Icon**: Integrated for sleek, developer-focused iconography.
 - **Google Fonts**: Utilizing 'Inter' for a clean, modern aesthetic.
 
@@ -32,10 +34,17 @@ A clean, minimal, and professional personal portfolio website built with semanti
 - [x] **Hover Effects**: Added "bouncy" transitions and lift effects to project cards.
 - [x] **Content Update**: Added real project details, live demo links, and GitHub repository links.
 
-## 🚀 Future Features (Roadmap)
-- [x] **Dark Mode Toggle**: Allow users to switch between light and dark themes.
-- [x] **Scroll Animations**: Add "Fade-in" effects using Intersection Observer API.
-- [ ] **Custom Cursor**: Implement a unique, branded cursor.
-- [x] **JavaScript Interactivity**: Add a mobile hamburger menu and scroll-to-top button.
+### Phase 4: Premium Features & Interactivity ✅
+- [x] **Dark Mode Toggle**: Integrated a theme switcher with `localStorage` persistence.
+- [x] **Premium Navigation**: Implemented a slide-in hamburger menu for mobile users.
+- [x] **Social Integration**: Added LinkedIn, GitHub, and LeetCode icons to the footer.
+- [x] **CSS Variables**: Refactored the stylesheet to use dynamic variables for instant theme swapping.
 
----
+## 🚀 Future Features (Roadmap)
+
+- [ ] **Reveal on Scroll**: Add "Fade-in" effects using Intersection Observer API.
+- [ ] **Scroll Progress Bar**: A subtle indicator at the top of the page.
+- [ ] **Custom Cursor**: Implement a unique, branded cursor follower.
+- [ ] **Contact Form Backend**: Connect the form to Formspree or Netlify Forms.
+- [ ] **Project Filtering**: Add tabs to filter projects by category (e.g., Frontend, UI/UX).
+- [ ] **Dynamic Status Badge**: A pulsing "Available for Work" indicator in the Hero section.
