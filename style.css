@@ -1,297 +1,335 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Zalando+Sans+Expanded:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Zalando+Sans+Expanded:wght@300;400;500;600;700&display=swap');
 
- /* Resets */
- * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
- }
+:root {
+    --bg-color: #fafafa;
+    --text-main: #404040;
+    --text-sub: #666;
+    --card-bg: #ffffff;
+    --border-color: #eee;
+    --nav-bg: rgba(250, 250, 250, 0.9);
+}
 
- html {
-     scroll-behavior: smooth;
- }
+[data-theme="dark"] {
+    --bg-color: #0b0b0b;
+    --text-main: #f0f0f0;
+    --text-sub: #aaa;
+    --card-bg: #161616;
+    --border-color: #222;
+    --nav-bg: rgba(11, 11, 11, 0.9);
+}
 
- body {
-     font-family: 'Inter', sans-serif;
-     color: #333;
-     background-color: #fafafa;
-     line-height: 1.6;
-     padding: 0 20px;
-     margin: 0 auto;
-     max-width: 1000px;
- }
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
- /* Nav */
- nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 40px 0;
- }
+html {
+    scroll-behavior: smooth;
+}
 
- .logo {
-     font-weight: 700;
-     font-size: 1.3rem;
-     display: flex;
-     align-items: center;
-     font-family: Zalando Sans Expanded;
-     gap: 10px;
-     color: #111;
- }
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
 
- nav ul {
-     display: flex;
-     list-style: none;
- }
+/* Navs */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
 
- nav ul li {
-     margin-left: 30px;
- }
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    gap: 10px;
+    color: var(--text-main);
+}
 
- nav ul li a {
-     text-decoration: none;
-     color: #666;
-     font-weight: 500;
-     font-size: 0.95rem;
-     transition: color 0.3s ease;
- }
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
- nav ul li a:hover {
-     color: #000;
- }
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
- /* Hero  */
- .hero {
-     text-align: center;
-     padding: 140px 0;
- }
+nav ul li {
+    margin-left: 30px;
+}
 
- .hero h1 {
-     font-size: 4rem;
-     color: #111;
-     margin-bottom: 20px;
-     letter-spacing: -2px;
-     font-weight: 800;
- }
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-sub);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
 
- .hero p {
-     font-size: 1.25rem;
-     color: #555;
-     max-width: 600px;
-     margin: 0 auto 40px;
- }
+nav ul li a:hover {
+    color: var(--text-main);
+}
 
- .hero-btns {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 25px;
- }
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
- .btn-primary {
-     text-decoration: none;
-     color: white;
-     background-color: #111;
-     font-size: 1rem;
-     font-weight: 600;
-     border-radius: 8px;
-     padding: 16px 32px;
-     transition: all 0.3s ease;
- }
+.theme-toggle,
+.hamburger {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
 
- .btn-primary:hover {
-     background-color: #333;
-     transform: translateY(-3px);
-     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
- }
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+}
 
- .github-link {
-     text-decoration: none;
-     color: #111;
-     font-weight: 600;
-     display: flex;
-     align-items: center;
-     gap: 8px;
-     transition: transform 0.3s ease;
- }
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 140px 0;
+}
 
- .github-link:hover {
-     transform: translateX(5px);
- }
+.hero h1 {
+    font-size: 4rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
 
- /* About */
- .about {
-     padding: 100px 0;
-     text-align: center;
-     border-top: 1px solid #eee;
- }
+.hero span {
+    font-family: "Zalando Sans Expanded";
+}
 
- .about h2 {
-     margin-bottom: 25px;
-     font-size: 2rem;
- }
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-sub);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
 
- .about p {
-     max-width: 750px;
-     margin: 0 auto;
-     color: #666;
-     font-size: 1.1rem;
- }
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
 
- /* Projects Grid */
- .projects {
-     padding: 100px 0;
- }
+.btn-primary {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--text-main);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 16px 32px;
+    transition: all 0.3s ease;
+}
 
- .projects h2 {
-     text-align: center;
-     margin-bottom: 60px;
-     font-size: 2rem;
- }
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
- .project-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-     gap: 40px;
- }
+.github-link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
 
- .project-card {
-     background-color: #fff;
-     border-radius: 16px;
-     border: 1px solid #eee;
-     overflow: hidden;
-     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
- }
+/* Projects */
+.projects {
+    padding: 100px 0;
+}
 
- .project-card:hover {
-     transform: translateY(-12px);
-     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
- }
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
 
- .project-img img {
-     width: 100%;
-     height: 240px;
-     object-fit: cover;
-     display: block;
-     border-bottom: 1px solid #eee;
- }
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
- .project-info {
-     padding: 30px;
- }
+.project-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
 
- .project-info h3 {
-     margin-bottom: 12px;
-     font-size: 1.4rem;
-     color: #111;
- }
+.project-info {
+    padding: 30px;
+}
 
- .project-info p {
-     font-size: 0.95rem;
-     color: #666;
-     margin-bottom: 30px;
-     min-height: 70px;
- }
+.project-info h3 {
+    color: var(--text-main);
+    margin-bottom: 12px;
+}
 
- .project-links {
-     display: flex;
-     gap: 25px;
- }
+.projects h2 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "Zalando Sans Expanded";
+}
 
- .project-links a {
-     text-decoration: none;
-     color: #111;
-     font-size: 0.9rem;
-     font-weight: 700;
-     display: flex;
-     align-items: center;
-     gap: 6px;
-     transition: color 0.2s;
- }
+.project-info p {
+    color: var(--text-sub);
+    margin-bottom: 30px;
+    font-family: 'fira code';
+}
 
- .project-links a:hover {
-     color: #666;
- }
+.project-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
 
- /* Contact */
- .contact-section {
-     padding: 100px 0;
-     text-align: center;
- }
+.project-links a:hover {
+    color: var(--text-sub);
+    transition: rgba(0, 0, 0, 0.6);
+}
 
- .contact-form {
-     display: flex;
-     flex-direction: column;
-     gap: 20px;
-     max-width: 550px;
-     margin: 50px auto 0;
-     text-align: left;
- }
+/* Contact */
+.contact-section {
+    padding: 100px 0;
+    text-align: center;
+}
 
- .contact-form label {
-     font-weight: 600;
-     font-size: 0.9rem;
-     margin-bottom: -10px;
- }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 550px;
+    margin: 50px auto 0;
+    text-align: left;
+}
 
- input,
- textarea {
-     padding: 16px;
-     border: 2px solid #eee;
-     border-radius: 10px;
-     font-family: inherit;
-     font-size: 1rem;
-     transition: border-color 0.3s ease;
- }
+input,
+textarea {
+    padding: 16px;
+    background: var(--card-bg);
+    color: var(--text-main);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-family: inherit;
+}
 
- input:focus,
- textarea:focus {
-     outline: none;
-     border-color: #111;
- }
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--text-main);
+}
 
- .contact-form button {
-     color: white;
-     background-color: #111;
-     font-size: 1rem;
-     font-weight: 700;
-     cursor: pointer;
-     border-radius: 10px;
-     border: none;
-     padding: 18px;
-     margin-top: 10px;
-     transition: all 0.3s ease;
- }
+.contact-form button {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
 
- .contact-form button:hover {
-     background-color: #333;
-     transform: scale(1.02);
- }
+/* Footer */
+footer {
+    text-align: center;
+    padding: 80px 0;
+    border-top: 1px solid var(--border-color);
+}
 
- footer {
-     text-align: center;
-     color: #aaa;
-     padding: 80px 0;
-     font-size: 0.9rem;
-     border-top: 1px solid #eee;
- }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
 
- /* Responsive Layout */
- @media (max-width: 768px) {
-     .hero h1 {
-         font-size: 2.8rem;
-     }
+.social-links a {
+    font-size: 1.6rem;
+    color: var(--text-sub);
+    transition: 0.3s;
+    text-decoration: none;
+}
 
-     nav {
-         flex-direction: column;
-         gap: 20px;
-     }
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: var(--text-main);
+}
 
-     nav ul li {
-         margin: 0 15px;
-     }
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
 
-     .project-grid {
-         grid-template-columns: 1fr;
-     }
- }
+    #nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        background: var(--card-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: 0.4s ease;
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-links.active {
+        right: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Projects stack on mobile */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
