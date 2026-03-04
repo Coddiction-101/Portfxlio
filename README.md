@@ -33,7 +33,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 - [x] **Content Update**: Added real project details, live demo links, and GitHub repository links.
 
 ## 🚀 Future Features (Roadmap)
-- [ ] **Dark Mode Toggle**: Allow users to switch between light and dark themes.
+- [x] **Dark Mode Toggle**: Allow users to switch between light and dark themes.
 - [ ] **Scroll Animations**: Add "Fade-in" effects using Intersection Observer API.
 - [ ] **Custom Cursor**: Implement a unique, branded cursor.
 - [ ] **JavaScript Interactivity**: Add a mobile hamburger menu and scroll-to-top button.
