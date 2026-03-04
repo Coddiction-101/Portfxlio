@@ -36,6 +36,6 @@ A clean, minimal, and professional personal portfolio website built with semanti
 - [x] **Dark Mode Toggle**: Allow users to switch between light and dark themes.
 - [x] **Scroll Animations**: Add "Fade-in" effects using Intersection Observer API.
 - [ ] **Custom Cursor**: Implement a unique, branded cursor.
-- [ ] **JavaScript Interactivity**: Add a mobile hamburger menu and scroll-to-top button.
+- [x] **JavaScript Interactivity**: Add a mobile hamburger menu and scroll-to-top button.
 
 ---
