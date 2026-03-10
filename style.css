@@ -18,7 +18,6 @@
     --nav-bg: rgba(11, 11, 11, 0.9);
 }
 
-/* Resets */
 * {
     padding: 0;
     margin: 0;
@@ -40,13 +39,47 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Navs */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
 }
+
+/* Progress */
+
+.scroll-progress-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 220px;
+    height: 6px;
+
+    border-radius: 50px;
+
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--border-color);
+
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+
+    background: var(--text-main);
+
+    border-radius: 50px;
+
+    transition: width 0.1s linear;
+}
+
+
 
 .logo {
     font-weight: 700;
@@ -106,7 +139,6 @@ nav ul li a:hover {
     border: none;
 }
 
-/* Hero */
 .hero {
     text-align: center;
     padding: 140px 0;
@@ -328,8 +360,20 @@ footer {
         font-size: 2.8rem;
     }
 
-    /* Projects stack on mobile */
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
