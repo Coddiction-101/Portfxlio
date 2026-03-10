@@ -38,3 +38,33 @@ if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeIcon.className = savedTheme === 'dark' ? 'ri-sun-line' : 'ri-moon-line';
 }
+
+
+const progressBar = document.getElementById("progressBar");
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress = (scrollTop / scrollHeight) * 100;
+
+    progressBar.style.width = progress + "%";
+
+});
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+reveals.forEach((el) => observer.observe(el));
