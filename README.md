@@ -43,7 +43,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 ## 🚀 Future Features (Roadmap)
 
 - [x] **Reveal on Scroll**: Add "Fade-in" effects using Intersection Observer API.
-- [ ] **Scroll Progress Bar**: A subtle indicator at the top of the page.
+- [x] **Scroll Progress Bar**: A subtle indicator at the top of the page.
 - [ ] **Custom Cursor**: Implement a unique, branded cursor follower.
 - [ ] **Contact Form Backend**: Connect the form to Formspree or Netlify Forms.
 - [ ] **Project Filtering**: Add tabs to filter projects by category (e.g., Frontend, UI/UX).
