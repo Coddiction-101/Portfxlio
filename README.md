@@ -1,5 +1,5 @@
  # Coddiction
-**Live Demo:** [personalpxrtfolio.netlify.app](https://personalpxrtfolio.netlify.app/)
+**Live Demo:** [personalpxrtfolio.netlify.app](https://coddiction-101.github.io/Portfxlio/)
 
 A clean, minimal, and professional personal portfolio website built with semantic HTML and custom CSS. This project showcases my journey in frontend development and my focus on building responsive, user-centric web experiences.
 
