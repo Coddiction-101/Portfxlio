@@ -17,7 +17,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 # Completed Milestones
 
-## Phase 1: HTML Structure ✅
+## Phase 1: HTML Structure 
 - [x] Set up document metadata and responsive viewport.
 - [x] Created a semantic `<nav>` with a custom logo (**Coddiction**).
 - [x] Built a **Hero Section** with a clear Call to Action (CTA).
