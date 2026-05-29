@@ -43,7 +43,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-## Phase 4: Premium Features & Interactivity ✅
+## Phase 4: Premium Features & Interactivity 
 - [x] **Dark Mode Toggle** with `localStorage` persistence.
 - [x] **Responsive Navigation** with slide-in hamburger menu.
 - [x] **Reveal on Scroll Animations** using the **Intersection Observer API**.
