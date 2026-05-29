@@ -53,7 +53,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-# ✨ Interactive UI Features
+# Interactive UI Features
 
 ### Reveal on Scroll
 Sections smoothly **fade and slide into view** as users scroll through the page.  
