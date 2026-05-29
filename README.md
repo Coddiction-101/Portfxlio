@@ -27,7 +27,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-## Phase 2: CSS Styling & Layout ✅
+## Phase 2: CSS Styling & Layout 
 - [x] **Global Reset**: Implemented `box-sizing: border-box` for consistent sizing.
 - [x] **Typography**: Integrated Google Fonts with a professional fallback stack.
 - [x] **Grid System**: Used **CSS Grid** with `repeat(auto-fit, minmax(320px, 1fr))` for a responsive project gallery.
