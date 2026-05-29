@@ -53,17 +53,6 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-# Interactive UI Features
-
-### Reveal on Scroll
-Sections smoothly **fade and slide into view** as users scroll through the page.  
-Implemented using the **Intersection Observer API** for efficient performance.
-
-### Scroll Progress Indicator
-A minimal progress bar at the top visually indicates **how much of the page has been scrolled**, improving navigation awareness.
-
----
-
 # 🚀 Future Features (Roadmap)
 
 - [ ] **Custom Cursor** – Implement a branded cursor follower.
