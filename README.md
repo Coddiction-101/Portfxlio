@@ -5,7 +5,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 - **HTML5**: Semantic structure for SEO and accessibility.
 - **CSS3**: Modern layout techniques (Flexbox & Grid), custom animations, and responsive design.
