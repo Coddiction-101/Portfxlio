@@ -35,7 +35,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-## Phase 3: Polish & Responsiveness ✅
+## Phase 3: Polish & Responsiveness 
 - [x] **Smooth Scrolling**: Implemented `scroll-behavior: smooth` for seamless navigation.
 - [x] **Mobile First**: Added Media Queries to ensure the site is fully responsive on all devices.
 - [x] **Hover Effects**: Added lift transitions and interactive project cards.
