@@ -53,16 +53,6 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-# 🚀 Future Features (Roadmap)
-
-- [ ] **Custom Cursor** – Implement a branded cursor follower.
-- [ ] **Contact Form Backend** – Connect the form to **Formspree / Netlify Forms**.
-- [ ] **Project Filtering System** – Filter projects by category (Frontend, UI, etc.).
-- [ ] **Dynamic Status Badge** – Add an "Available for Work" indicator in the Hero section.
-- [ ] **Project Detail Pages** – Dedicated pages for major projects.
-
----
-
 # 💡 Learning Outcomes
 
 This project helped me practice:
