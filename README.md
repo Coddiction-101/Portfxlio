@@ -15,7 +15,7 @@ A clean, minimal, and professional personal portfolio website built with semanti
 
 ---
 
-# 📝 Completed Milestones
+# Completed Milestones
 
 ## Phase 1: HTML Structure ✅
 - [x] Set up document metadata and responsive viewport.
