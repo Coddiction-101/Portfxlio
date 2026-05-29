@@ -51,18 +51,4 @@ A clean, minimal, and professional personal portfolio website built with semanti
 - [x] **Social Links Integration** (LinkedIn, GitHub, LeetCode).
 - [x] **CSS Variables Architecture** for dynamic theme switching.
 
----
-
-# 💡 Learning Outcomes
-
-This project helped me practice:
-
-- Building **responsive layouts from scratch**
-- Writing **clean and maintainable CSS**
-- Implementing **modern JavaScript interactions**
-- Using **Intersection Observer for UI animations**
-- Creating a **developer portfolio ready for real-world use**
-
----
-
-⭐ If you find this project useful or interesting, feel free to **star the repository**.
+--- 
