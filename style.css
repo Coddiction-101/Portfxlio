@@ -320,30 +320,40 @@ nav ul li a:hover {
 
 .project-slider {
     position: relative;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 10px 0 20px;
     cursor: grab;
     mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-    touch-action: pan-y;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    touch-action: pan-x pan-y;
     user-select: none;
+}
+
+.project-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-slider::-webkit-scrollbar-thumb {
+    background: rgba(64, 64, 64, 0.24);
+    border-radius: 999px;
 }
 
 .project-slider.is-dragging {
     cursor: grabbing;
+    scroll-behavior: auto;
 }
 
 .project-track {
     display: flex;
     width: max-content;
     gap: 24px;
-    animation: project-slide 38s linear infinite;
-    will-change: transform;
-}
-
-.project-slider:hover .project-track,
-.project-slider:focus-within .project-track {
-    animation-play-state: paused;
 }
 
 .project-card {
@@ -427,6 +437,8 @@ nav ul li a:hover {
 }
 
 .project-links {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -440,6 +452,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 6px;
+    cursor: pointer;
     padding: 10px 12px;
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 8px;
@@ -456,16 +469,6 @@ nav ul li a:hover {
 .project-link-disabled {
     color: rgba(255, 255, 255, 0.65);
     cursor: not-allowed;
-}
-
-@keyframes project-slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(calc(-50% - 12px));
-    }
 }
 
 /* Contact */
@@ -595,17 +598,6 @@ footer {
         padding: 24px;
     }
 }
-
-@media (prefers-reduced-motion: reduce) {
-    .project-track {
-        animation: none;
-        overflow-x: auto;
-        max-width: calc(100vw - 40px);
-        padding-bottom: 10px;
-    }
-}
-
-
 
 .reveal {
     opacity: 0;
