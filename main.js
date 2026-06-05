@@ -3,6 +3,7 @@ const navLinks = document.getElementById('nav-links');
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
+if (hamburger && navLinks) {
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     const isOpen = navLinks.classList.contains('active');
@@ -14,15 +15,23 @@ hamburger.addEventListener('click', () => {
         icon.className = 'ri-menu-3-line';
     }
 });
+}
 
 document.querySelectorAll('#nav-links a').forEach(link => {
     link.addEventListener('click', () => {
+        if (!navLinks || !hamburger) {
+            return;
+        }
+
         navLinks.classList.remove('active');
         const icon = hamburger.querySelector('i');
-        icon.className = 'ri-menu-3-line';
+        if (icon) {
+            icon.className = 'ri-menu-3-line';
+        }
     });
 });
 
+if (themeToggle && themeIcon) {
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -32,9 +41,10 @@ themeToggle.addEventListener('click', () => {
 
     themeIcon.className = newTheme === 'dark' ? 'ri-sun-line' : 'ri-moon-line';
 });
+}
 
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
+if (savedTheme && themeIcon) {
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeIcon.className = savedTheme === 'dark' ? 'ri-sun-line' : 'ri-moon-line';
 }
@@ -45,71 +55,26 @@ const projectSlider = document.querySelector(".project-slider");
 const projectTrack = document.querySelector(".project-track");
 
 if (projectSlider && projectTrack) {
-    const projectCards = Array.from(projectTrack.children);
     let isDragging = false;
     let startX = 0;
-    let startTranslate = 0;
+    let startScrollLeft = 0;
     let didDrag = false;
-    let resumeTimer;
-
-    projectCards.forEach((card) => {
-        const clone = card.cloneNode(true);
-        clone.setAttribute("aria-hidden", "true");
-        clone.querySelectorAll("a").forEach((link) => {
-            link.setAttribute("tabindex", "-1");
-        });
-        projectTrack.appendChild(clone);
-    });
-
-    const getTrackTranslate = () => {
-        const transform = window.getComputedStyle(projectTrack).transform;
-
-        if (transform === "none") {
-            return 0;
-        }
-
-        const matrix = new DOMMatrixReadOnly(transform);
-        return matrix.m41;
-    };
-
-    const normalizeTranslate = (value) => {
-        const loopWidth = projectTrack.scrollWidth / 2;
-
-        if (!loopWidth) {
-            return value;
-        }
-
-        if (value > 0) {
-            return value - loopWidth;
-        }
-
-        if (value < -loopWidth) {
-            return value + loopWidth;
-        }
-
-        return value;
-    };
-
-    const resumeProjectSlide = () => {
-        resumeTimer = window.setTimeout(() => {
-            projectTrack.style.animation = "";
-            projectTrack.style.transform = "";
-        }, 600);
-    };
 
     projectSlider.addEventListener("pointerdown", (event) => {
         if (event.button !== 0) {
             return;
         }
 
-        window.clearTimeout(resumeTimer);
+        if (event.target.closest(".project-links a")) {
+            didDrag = false;
+            return;
+        }
+
         isDragging = true;
         didDrag = false;
         startX = event.clientX;
-        startTranslate = getTrackTranslate();
+        startScrollLeft = projectSlider.scrollLeft;
 
-        projectTrack.style.animation = "none";
-        projectTrack.style.transform = `translateX(${startTranslate}px)`;
         projectSlider.classList.add("is-dragging");
         projectSlider.setPointerCapture(event.pointerId);
     });
@@ -125,8 +90,7 @@ if (projectSlider && projectTrack) {
             didDrag = true;
         }
 
-        const nextTranslate = normalizeTranslate(startTranslate + distance);
-        projectTrack.style.transform = `translateX(${nextTranslate}px)`;
+        projectSlider.scrollLeft = startScrollLeft - distance;
     });
 
     const stopDragging = (event) => {
@@ -140,14 +104,17 @@ if (projectSlider && projectTrack) {
         if (projectSlider.hasPointerCapture(event.pointerId)) {
             projectSlider.releasePointerCapture(event.pointerId);
         }
-
-        resumeProjectSlide();
     };
 
     projectSlider.addEventListener("pointerup", stopDragging);
     projectSlider.addEventListener("pointercancel", stopDragging);
 
     projectSlider.addEventListener("click", (event) => {
+        if (event.target.closest(".project-links a")) {
+            didDrag = false;
+            return;
+        }
+
         if (!didDrag) {
             return;
         }
@@ -158,6 +125,7 @@ if (projectSlider && projectTrack) {
     }, true);
 }
 
+if (progressBar) {
 window.addEventListener("scroll", () => {
 
     const scrollTop = document.documentElement.scrollTop;
@@ -165,11 +133,12 @@ window.addEventListener("scroll", () => {
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
 
-    const progress = (scrollTop / scrollHeight) * 100;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
 
     progressBar.style.width = progress + "%";
 
 });
+}
 
 const reveals = document.querySelectorAll(".reveal");
 
