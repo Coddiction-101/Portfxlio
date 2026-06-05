@@ -168,6 +168,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .btn-primary {
@@ -187,6 +188,7 @@ nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.resume-link,
 .github-link {
     text-decoration: none;
     color: var(--text-main);
@@ -195,6 +197,18 @@ nav ul li a:hover {
     align-items: center;
     gap: 8px;
     transition: transform 0.3s ease;
+}
+
+.resume-link {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 20px;
+    background: var(--card-bg);
+}
+
+.resume-link:hover,
+.github-link:hover {
+    transform: translateY(-3px);
 }
 
 /* Skills */
