@@ -10,7 +10,7 @@ You can find me here: [Coddiction](https://portfxlio.vercel.app/)
 
 ## A little about me
 
-- I am a BCA student who enjoys web development
+- I have completed my BCA and enjoy web development
 - I like working with HTML, CSS, JavaScript, and C++
 - I enjoy building practical projects and refining the small details
 - I am still learning, and I keep improving with every new thing I build
