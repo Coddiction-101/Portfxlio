@@ -1,54 +1,22 @@
- # Coddiction
-**Check it here:** [Coddiction](https://portfxlio.vercel.app/)
+# Coddiction
 
-A clean, minimal, and professional personal portfolio website built with semantic HTML and custom CSS. This project showcases my journey in frontend development and my focus on building responsive, user-centric web experiences.
+Hi, I'm Gulshan.
 
----
+I like building things that feel clean, calm, and easy to use. Most of my time goes into learning frontend development, improving how I design interfaces, and turning small ideas into something useful.
 
-# Tech Stack
+Outside of code, I care a lot about presentation, details, and keeping things human. I try to make my work feel personal instead of overly polished or generic.
 
-- **HTML5**: Semantic structure for SEO and accessibility.
-- **CSS3**: Modern layout techniques (Flexbox & Grid), custom animations, and responsive design.
-- **JavaScript (ES6+)**: Theme switching logic, mobile navigation, scroll animations, and interactive UI elements.
-- **Remix Icon**: Integrated for sleek, developer-focused iconography.
-- **Google Fonts**: Utilizing **Inter** for a clean, modern aesthetic.
+You can find me here: [Coddiction](https://portfxlio.vercel.app/)
 
----
+## A little about me
 
-# Completed Milestones
+- I am a BCA student who enjoys web development
+- I like working with HTML, CSS, JavaScript, and C++
+- I enjoy building practical projects and refining the small details
+- I am still learning, and I keep improving with every new thing I build
 
-## Phase 1: HTML Structure 
-- [x] Set up document metadata and responsive viewport.
-- [x] Created a semantic `<nav>` with a custom logo (**Coddiction**).
-- [x] Built a **Hero Section** with a clear Call to Action (CTA).
-- [x] Implemented an **About Section** for personal branding.
-- [x] Designed a **Project Grid** using `<article>` tags for project cards.
-- [x] Added a functional **Contact Form** structure with proper input labeling.
+## Where to reach me
 
----
-
-## Phase 2: CSS Styling & Layout 
-- [x] **Global Reset**: Implemented `box-sizing: border-box` for consistent sizing.
-- [x] **Typography**: Integrated Google Fonts with a professional fallback stack.
-- [x] **Grid System**: Used **CSS Grid** with `repeat(auto-fit, minmax(320px, 1fr))` for a responsive project gallery.
-- [x] **Minimalist Theme**: Applied a soft background (`#fafafa`) and dark accents for a modern look.
-
----
-
-## Phase 3: Polish & Responsiveness 
-- [x] **Smooth Scrolling**: Implemented `scroll-behavior: smooth` for seamless navigation.
-- [x] **Mobile First**: Added Media Queries to ensure the site is fully responsive on all devices.
-- [x] **Hover Effects**: Added lift transitions and interactive project cards.
-- [x] **Content Update**: Added real project details, live demo links, and GitHub repository links.
-
----
-
-## Phase 4: Premium Features & Interactivity 
-- [x] **Dark Mode Toggle** with `localStorage` persistence.
-- [x] **Responsive Navigation** with slide-in hamburger menu.
-- [x] **Reveal on Scroll Animations** using the **Intersection Observer API**.
-- [x] **Scroll Progress Indicator** to show page reading progress.
-- [x] **Social Links Integration** (LinkedIn, GitHub, LeetCode).
-- [x] **CSS Variables Architecture** for dynamic theme switching.
-
---- 
+- GitHub: [Coddiction-101](https://github.com/Coddiction-101)
+- LinkedIn: [Gulshan Kushwaha](https://www.linkedin.com/in/gulshan-kushwaha-439036334/)
+- LeetCode: [Gulshxn](https://leetcode.com/u/Gulshxn/)
