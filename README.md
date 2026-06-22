@@ -18,5 +18,5 @@ You can find me here: [Coddiction](https://portfxlio.vercel.app/)
 ## Where to reach me
 
 - GitHub: [Coddiction-101](https://github.com/Coddiction-101)
-- LinkedIn: [Gulshan Kushwaha](https://www.linkedin.com/in/gulshan-kushwaha-439036334/)
+- LinkedIn: [Gulshan Kushwaha](https://www.linkedin.com/in/gulshxn/)
 - LeetCode: [Gulshxn](https://leetcode.com/u/Gulshxn/)
