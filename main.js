@@ -135,7 +135,7 @@ window.addEventListener("scroll", () => {
 
     const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
 
-    progressBar.style.width = progress + "%";
+    progressBar.style.height = progress + "%";
 
 });
 }
