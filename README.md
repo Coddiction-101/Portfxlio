@@ -10,13 +10,6 @@ You can find me here: [Coddiction](https://portfxlio.vercel.app/)
 
 ## A little about me
 
-- I have completed my BCA and enjoy web development
 - I like working with HTML, CSS, JavaScript, and C++
 - I enjoy building practical projects and refining the small details
 - I am still learning, and I keep improving with every new thing I build
-
-## Where to reach me
-
-- GitHub: [Coddiction-101](https://github.com/Coddiction-101)
-- LinkedIn: [Gulshan Kushwaha](https://www.linkedin.com/in/gulshxn/)
-- LeetCode: [Gulshxn](https://leetcode.com/u/Gulshxn/)
