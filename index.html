@@ -1,332 +1,244 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css?v=20260605-2" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
 
-    <title>Coddiction</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css?v=20260605-2" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <meta
-      name="description"
-      content="Gulshan Kushwaha — BCA student building real-world web & C++ projects."
-    />
-    <meta property="og:title" content="Coddiction — Gulshan Kushwaha" />
-    <meta
-      property="og:description"
-      content="Portfolio of projects built with HTML, CSS, JS & C++."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://portfxlio.vercel.app/" />
-  </head>
+  <title>Coddiction</title>
 
-  <body>
-    <div class="scroll-progress-wrapper">
-      <div class="scroll-progress-bar" id="progressBar"></div>
-    </div>
+  <meta name="description" content="Gulshan Kushwaha —  building real-world web & C++ projects." />
+  <meta property="og:title" content="Coddiction — Gulshan Kushwaha" />
+  <meta property="og:description" content="Portfolio of projects built with HTML, CSS, JS & C++." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portfxlio.vercel.app/" />
+</head>
 
-    <header>
-      <nav>
-        <div class="logo"><i class="ri-xrp-line"></i> Coddiction</div>
-        <div class="nav-right">
-          <ul id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="nav-actions">
-            <div class="theme-toggle" id="theme-toggle">
-              <i class="ri-moon-line" id="theme-icon"></i>
-            </div>
-            <div class="hamburger" id="hamburger">
-              <i class="ri-menu-5-fill"></i>
-            </div>
+<body>
+  <div class="scroll-progress-wrapper">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo"><i class="ri-xrp-line"></i> Coddiction</div>
+      <div class="nav-right">
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="theme-toggle" id="theme-toggle">
+            <i class="ri-moon-line" id="theme-icon"></i>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <i class="ri-menu-5-fill"></i>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section id="home" class="hero reveal">
-        <h1>Hey, <span>I'm Gulshan</span></h1>
-        <p>Web developer focused on clean interfaces and thoughtful design.</p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a
-            href="assets/GulshanRes.pdf"
-            target="_blank"
-            rel="noopener"
-            class="resume-link"
-          >
-            <i class="ri-file-user-line"></i> Resume
-          </a>
-          <a
-            href="https://github.com/Coddiction-101"
-            target="_blank"
-            class="github-link"
-          >
-            <i class="ri-github-line"></i> GitHub Profile
-          </a>
-        </div>
-      </section>
-
-      <section id="about" class="about reveal">
-        <h2>About me</h2>
-        <p>
-          I'm a BCA student who enjoys building responsive web applications with
-          a focus on clean design and typography. I tend to invest a lot of time
-          getting things right — this portfolio is a good example of that.
-          Aiming for a software developer role, one useful project at a time.
-        </p>
-      </section>
-
-      <section id="skills" class="skills reveal" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <h2 id="skills-title">Tech Stack</h2>
-          <p>Tools I use to build, ship, and refine web projects.</p>
-        </div>
-        <div class="tech-stack-panel">
-          <div class="tech-stack-cloud" aria-label="Technologies I work with">
-            <span class="tech-chip"><i class="ri-cup-line"></i> Java</span>
-            <span class="tech-chip"><i class="ri-php-fill"></i> PHP</span>
-            <span class="tech-chip"
-              ><i class="ri-javascript-line"></i> JavaScript</span
-            >
-            <span class="tech-chip"
-              ><i class="ri-code-s-slash-line"></i> C++</span
-            >
-            <span class="tech-chip"><i class="ri-reactjs-line"></i> React</span>
-            <span class="tech-chip"><i class="ri-html5-line"></i> HTML5</span>
-            <span class="tech-chip"><i class="ri-css3-line"></i> CSS3</span>
-            <span class="tech-chip"
-              ><i class="ri-git-branch-line"></i> Git</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects reveal">
-        <h2>Featured Projects</h2>
-        <div class="project-slider" aria-label="Featured projects slider">
-          <div class="project-track">
-            <article class="project-card">
-              <div class="project-img">
-                <img
-                  src="assets/cortex_dashboard.png"
-                  alt="Cortex — Task Management App"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Cortex</h3>
-                <p>
-                  A minimal, focus-first task management application built
-                  entirely with vanilla technologies. No frameworks. No
-                  dependencies. Just clean, highly optimized frontend
-                  architecture.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://cortex-ashen-two.vercel.app/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-external-link-line"></i> Live Demo
-                  </a>
-                  <a
-                    href="https://github.com/Coddiction-101/Cortex"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-github-line"></i> Repo
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-img">
-                <img
-                  src="assets/ff_dashboard.png"
-                  alt="FocusForge — Productivity Dashboard"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3>FocusForge</h3>
-                <p>
-                  A structured productivity dashboard built to help you focus
-                  deeply, manage task priorities, and track your deep work
-                  sessions — without the noise.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://coddiction-101.github.io/VibeHai/FocusForge/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-external-link-line"></i> Live Demo
-                  </a>
-                  <a
-                    href="https://github.com/Coddiction-101/VibeHai/tree/main/FocusForge"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-github-line"></i> Repo
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://i.pinimg.com/736x/ec/5a/fc/ec5afc99a8207592d6efd21ccffc8684.jpg"
-                  alt="Task Manager & Scheduler — C++ CLI App"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Task Manager & Scheduler</h3>
-                <p>
-                  A fully functional command-line task management system built
-                  in C++ for organizing daily tasks with priorities, deadlines,
-                  and persistent storage. Features a color-coded terminal UI
-                  using ANSI escape codes.
-                </p>
-                <div class="project-links">
-                  <span class="project-link-disabled">
-                    <i class="ri-terminal-box-line"></i> No Live Demo
-                  </span>
-                  <a
-                    href="https://github.com/Coddiction-101/cpp_projects/tree/main/TaskManager%26Schedular"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-github-line"></i> Repo
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://i.pinimg.com/736x/43/56/1a/43561ae5ee2a190c7aeaa8210e19a7b9.jpg"
-                  alt="Banking System — ATM Simulator C++ App"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Banking System - ATM Simulator</h3>
-                <p>
-                  A console-based banking application built in C++ that
-                  simulates real-world ATM operations with account management,
-                  secure transactions, and persistent data storage.
-                </p>
-                <div class="project-links">
-                  <span class="project-link-disabled">
-                    <i class="ri-terminal-box-line"></i> No Live Demo
-                  </span>
-                  <a
-                    href="https://github.com/Coddiction-101/cpp_projects/tree/main/BankingSimulation"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-github-line"></i> Repo
-                  </a>
-                </div>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-img">
-                <img
-                  src="assets/floww_dashboard.png"
-                  alt="Floww — Drag-and-Drop Task Manager"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Flowboard - Task Manager</h3>
-                <p>
-                  Flowboard is a lightweight task management app that lets you
-                  create, prioritize, edit, and move tasks across three stages —
-                  To-Dos, Active, and Complete — using a clean drag-and-drop
-                  interface.
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://flowboardv2.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-external-link-line"></i> Live Demo
-                  </a>
-                  <a
-                    href="https://github.com/Coddiction-101/Floww/tree/main"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="ri-github-line"></i> Repo
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section reveal">
-        <h2>Get in Touch</h2>
-        <form class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Your Email" required />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="Your message..."
-          ></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <div class="social-links">
-        <a
-          href="https://github.com/Coddiction-101"
-          target="_blank"
-          title="GitHub"
-        >
-          <i class="ri-github-fill"></i>
+  <main>
+    <section id="home" class="hero reveal">
+      <h1>Hey, <span>I'm Gulshan</span></h1>
+      <p>Web developer focused on clean interfaces and thoughtful design.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="assets/GulshanRes.pdf" target="_blank" rel="noopener" class="resume-link">
+          <i class="ri-file-user-line"></i> Resume
         </a>
-        <a
-          href="https://www.linkedin.com/in/gulshan-kushwaha-439036334/"
-          target="_blank"
-          title="Linkedin"
-        >
-          <i class="ri-linkedin-box-fill"></i>
-        </a>
-        <a
-          href="https://leetcode.com/u/Gulshxn/"
-          target="_blank"
-          title="Leetcode"
-        >
-          <i class="ri-code-box-fill"></i>
+        <a href="https://github.com/Coddiction-101" target="_blank" class="github-link">
+          <i class="ri-github-line"></i> GitHub Profile
         </a>
       </div>
-      <p>&copy; 2026 Coddiction.</p>
-    </footer>
+    </section>
 
-    <script src="main.js?v=20260605-2"></script>
-  </body>
+    <section id="about" class="about reveal">
+      <h2>About me</h2>
+      <p>
+        I build responsive web apps and care way too much about the little details—clean UI, good typography, and making
+        things feel right. I like taking my time to build things I'm genuinely proud of. Currently working towards a
+        software developer role.</p>
+    </section>
+
+    <section id="skills" class="skills reveal" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <h2 id="skills-title">Tech Stack</h2>
+        <p>Tools I use to build, ship, and refine web projects.</p>
+      </div>
+      <div class="tech-stack-panel">
+        <div class="tech-stack-cloud" aria-label="Technologies I work with">
+          <span class="tech-chip"><i class="ri-cup-line"></i> Java</span>
+          <span class="tech-chip"><i class="ri-php-fill"></i> PHP</span>
+          <span class="tech-chip"><i class="ri-javascript-line"></i> JavaScript</span>
+          <span class="tech-chip"><i class="ri-code-s-slash-line"></i> C++</span>
+          <span class="tech-chip"><i class="ri-reactjs-line"></i> React</span>
+          <span class="tech-chip"><i class="ri-html5-line"></i> HTML5</span>
+          <span class="tech-chip"><i class="ri-css3-line"></i> CSS3</span>
+          <span class="tech-chip"><i class="ri-git-branch-line"></i> Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects reveal">
+      <h2>Featured Projects</h2>
+      <div class="project-slider" aria-label="Featured projects slider">
+        <div class="project-track">
+          <article class="project-card">
+            <div class="project-img">
+              <img src="assets/cortex_dashboard.png" alt="Cortex — Task Management App" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3>Cortex</h3>
+              <p>
+                A minimal, focus-first task management application built
+                entirely with vanilla technologies. No frameworks. No
+                dependencies. Just clean, highly optimized frontend
+                architecture.
+              </p>
+              <div class="project-links">
+                <a href="https://cortex-ashen-two.vercel.app/" target="_blank" rel="noopener">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+                <a href="https://github.com/Coddiction-101/Cortex" target="_blank" rel="noopener">
+                  <i class="ri-github-line"></i> Repo
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img">
+              <img src="assets/ff_dashboard.png" alt="FocusForge — Productivity Dashboard" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3>FocusForge</h3>
+              <p>
+                A structured productivity dashboard built to help you focus
+                deeply, manage task priorities, and track your deep work
+                sessions — without the noise.
+              </p>
+              <div class="project-links">
+                <a href="https://coddiction-101.github.io/VibeHai/FocusForge/" target="_blank" rel="noopener">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+                <a href="https://github.com/Coddiction-101/VibeHai/tree/main/FocusForge" target="_blank" rel="noopener">
+                  <i class="ri-github-line"></i> Repo
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img">
+              <img src="https://i.pinimg.com/736x/ec/5a/fc/ec5afc99a8207592d6efd21ccffc8684.jpg"
+                alt="Task Manager & Scheduler — C++ CLI App" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3>Task Manager & Scheduler</h3>
+              <p>
+                A fully functional command-line task management system built
+                in C++ for organizing daily tasks with priorities, deadlines,
+                and persistent storage. Features a color-coded terminal UI
+                using ANSI escape codes.
+              </p>
+              <div class="project-links">
+                <span class="project-link-disabled">
+                  <i class="ri-terminal-box-line"></i> No Live Demo
+                </span>
+                <a href="https://github.com/Coddiction-101/cpp_projects/tree/main/TaskManager%26Schedular"
+                  target="_blank" rel="noopener">
+                  <i class="ri-github-line"></i> Repo
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img">
+              <img src="https://i.pinimg.com/736x/43/56/1a/43561ae5ee2a190c7aeaa8210e19a7b9.jpg"
+                alt="Banking System — ATM Simulator C++ App" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3>Banking System - ATM Simulator</h3>
+              <p>
+                A console-based banking application built in C++ that
+                simulates real-world ATM operations with account management,
+                secure transactions, and persistent data storage.
+              </p>
+              <div class="project-links">
+                <span class="project-link-disabled">
+                  <i class="ri-terminal-box-line"></i> No Live Demo
+                </span>
+                <a href="https://github.com/Coddiction-101/cpp_projects/tree/main/BankingSimulation" target="_blank"
+                  rel="noopener">
+                  <i class="ri-github-line"></i> Repo
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img">
+              <img src="assets/floww_dashboard.png" alt="Floww — Drag-and-Drop Task Manager" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h3>Flowboard - Task Manager</h3>
+              <p>
+                Flowboard is a lightweight task management app that lets you
+                create, prioritize, edit, and move tasks across three stages —
+                To-Dos, Active, and Complete — using a clean drag-and-drop
+                interface.
+              </p>
+              <div class="project-links">
+                <a href="https://flowboardv2.netlify.app/" target="_blank" rel="noopener">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+                <a href="https://github.com/Coddiction-101/Floww/tree/main" target="_blank" rel="noopener">
+                  <i class="ri-github-line"></i> Repo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/Coddiction-101" target="_blank" title="GitHub">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gulshan-kushwaha-439036334/" target="_blank" title="Linkedin">
+        <i class="ri-linkedin-box-fill"></i>
+      </a>
+      <a href="https://leetcode.com/u/Gulshxn/" target="_blank" title="Leetcode">
+        <i class="ri-code-box-fill"></i>
+      </a>
+    </div>
+    <p>&copy; 2026 Coddiction.</p>
+  </footer>
+
+  <script src="main.js?v=20260605-2"></script>
+</body>
+
 </html>
