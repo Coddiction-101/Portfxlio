@@ -764,17 +764,6 @@ function Contact() {
   );
 }
 
-function Footer() {
-  return (
-    <footer>
-      <div className="footer-inner">
-        <p>&copy; 2026 Gulshan Kushwaha (Coddiction)</p>
-        <a href="#" className="footer-top">Back to top <i className="ri-arrow-up-line" aria-hidden="true"></i></a>
-      </div>
-    </footer>
-  );
-}
-
 function useRevealAnimations() {
   useEffect(() => {
     const elements = document.querySelectorAll('.reveal');
@@ -903,7 +892,6 @@ function App() {
       ) : (
         <ProjectsPage route={route} onNavigate={navigate} onOpen={openProject} />
       )}
-      <Footer />
       <AnimatedCursor />
     </>
   );

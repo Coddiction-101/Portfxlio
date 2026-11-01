@@ -1119,41 +1119,6 @@ nav ul li a:hover {
   .contact-social-label { flex-basis: 100%; margin: 0; }
 }
 
-/* Footer */
-footer {
-  padding: 0 0 20px;
-}
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-color);
-}
-.footer-inner p,
-.footer-top {
-  color: var(--text-sub);
-  font: 500 .66rem "Fira Code", monospace;
-}
-.footer-inner p { margin: 0; }
-.footer-top {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  transition: color 160ms ease, transform 160ms ease;
-}
-.footer-top:hover {
-  color: var(--text-main);
-  transform: translateY(-2px);
-}
-.footer-top:focus-visible { outline: 2px solid var(--text-sub); outline-offset: 4px; }
-
-@media (max-width: 560px) {
-  .footer-inner { flex-wrap: wrap; gap: 10px 16px; }
-}
-
 @media (max-width: 768px) {
   .scroll-progress-wrapper {
     display: none;
