@@ -6,7 +6,7 @@
   --text-sub: #666;
   --card-bg: #ffffff;
   --border-color: #eee;
-  --nav-bg: rgba(250, 250, 250, 0.9);
+  --nav-bg: rgba(250, 250, 250, 0.96);
 }
 
 [data-theme="dark"] {
@@ -15,7 +15,7 @@
   --text-sub: #9E9E9E;
   --card-bg: #202020;
   --border-color: #2a2a2a;
-  --nav-bg: rgba(23, 23, 23, 0.9);
+  --nav-bg: rgba(23, 23, 23, 0.96);
 }
 
 * {
@@ -55,9 +55,9 @@ header {
   right: 0;
   z-index: 1000;
   padding: 0 max(20px, calc((100vw - 1000px) / 2));
-  background: color-mix(in srgb, var(--nav-bg) 72%, transparent);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
   border-bottom: 1px solid color-mix(in srgb, var(--text-main) 8%, transparent);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
 }
