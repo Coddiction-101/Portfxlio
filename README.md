@@ -1,19 +1,15 @@
-# Coddiction Portfolio
+# Coddiction
 
-React portfolio built with Vite.
+Hi, I'm Gulshan.
 
-## Run locally
+I like building things that feel clean, calm, and easy to use. Most of my time goes into learning frontend development, improving how I design interfaces, and turning small ideas into something useful.
 
-```sh
-npm install
-npm run dev
-```
+Outside of code, I care a lot about presentation, details, and keeping things human. I try to make my work feel personal instead of overly polished or generic.
 
-## Production build
+You can find me here: [Coddiction](https://portfxlio.vercel.app/)
 
-```sh
-npm run build
-npm run preview
-```
+## A little about me
 
-Static assets are in `assets/`. React components and interactions are in `src/App.jsx`.
+- I like working with HTML, CSS, JavaScript, and C++
+- I enjoy building practical projects and refining the small details
+- I am still learning, and I keep improving with every new thing I build
