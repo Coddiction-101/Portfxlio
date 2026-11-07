@@ -23,6 +23,8 @@ const projects = [
     name: 'Cortex',
     alt: 'Cortex — Task Management App',
     description: 'A minimal, focus-first task management application built entirely with vanilla technologies. No frameworks. No dependencies. Just clean, highly optimized frontend architecture.',
+    shortDescription: 'A focused task manager for clearer daily work.',
+    keyPoints: ['Prioritize work without visual noise', 'Local-first data and fast interactions', 'Built for keyboard-focused daily use'],
     demo: 'https://cortex-ashen-two.vercel.app/',
     repo: 'https://github.com/Coddiction-101/Cortex',
     group: 'web',
@@ -34,6 +36,8 @@ const projects = [
     name: 'FocusForge',
     alt: 'FocusForge — Productivity Dashboard',
     description: 'A structured productivity dashboard built to help you focus deeply, manage task priorities, and track your deep work sessions — without the noise.',
+    shortDescription: 'A calm dashboard for deep work and planning.',
+    keyPoints: ['Session-based focus tracking', 'Tasks organized by daily priority', 'Progress shown without dashboard clutter'],
     demo: 'https://coddiction-101.github.io/VibeHai/FocusForge/',
     repo: 'https://github.com/Coddiction-101/VibeHai/tree/main/FocusForge',
     group: 'web',
@@ -45,6 +49,8 @@ const projects = [
     name: 'Task Manager & Scheduler',
     alt: 'Task Manager & Scheduler — C++ CLI App',
     description: 'A fully functional command-line task management system built in C++ for organizing daily tasks with priorities, deadlines, and persistent storage. Features a color-coded terminal UI using ANSI escape codes.',
+    shortDescription: 'A terminal scheduler built in C++.',
+    keyPoints: ['Priority and deadline management', 'Persistent task storage', 'Color-coded terminal interface'],
     repo: 'https://github.com/Coddiction-101/cpp_projects/tree/main/TaskManager%26Schedular',
     group: 'other',
     stack: ['C++', 'CLI'],
@@ -55,6 +61,8 @@ const projects = [
     name: 'Banking System - ATM Simulator',
     alt: 'Banking System — ATM Simulator C++ App',
     description: 'A console-based banking application built in C++ that simulates real-world ATM operations with account management, secure transactions, and persistent data storage.',
+    shortDescription: 'A console simulation of core ATM workflows.',
+    keyPoints: ['Account creation and management', 'Secure-style transaction flow', 'Persistent balance storage'],
     repo: 'https://github.com/Coddiction-101/cpp_projects/tree/main/BankingSimulation',
     group: 'other',
     stack: ['C++', 'CLI'],
@@ -65,6 +73,8 @@ const projects = [
     name: 'Flowboard - Task Manager',
     alt: 'Flowboard — Drag-and-Drop Task Manager',
     description: 'Flowboard is a lightweight task management app that lets you create, prioritize, edit, and move tasks across three stages — To-Dos, Active, and Complete — using a clean drag-and-drop interface.',
+    shortDescription: 'A visual board for moving work forward.',
+    keyPoints: ['Drag-and-drop task movement', 'Clear To-Do, Active, and Complete stages', 'Lightweight edits without page reloads'],
     demo: 'https://flowboardv2.netlify.app/',
     repo: 'https://github.com/Coddiction-101/Floww',
     group: 'web',
@@ -76,6 +86,8 @@ const projects = [
     name: 'GitVerse',
     alt: 'GitVerse — Interactive 3D GitHub Visualizer',
     description: 'An interactive 3D GitHub visualizer that transforms any GitHub profile into a procedurally generated universe. Explore repositories and commits as planets, stars, galaxies, and other space elements in a cinematic environment.',
+    shortDescription: 'GitHub profiles turned into an explorable universe.',
+    keyPoints: ['Live GitHub profile data', 'Repositories mapped as a visual system', 'Interactive 3D-style exploration'],
     demo: 'https://gv-v1.vercel.app/',
     repo: 'https://github.com/Coddiction-101/Gv-v1',
     group: 'web',
@@ -100,6 +112,39 @@ const technologies = [
   { name: 'GitHub', icon: siGithub },
   { name: 'VS Code', mark: '</>', markColor: '#007acc' },
   { name: 'CLI', mark: '>_', markColor: '#6b8e6b' }
+];
+
+const technologyCategories = [
+  {
+    number: '01',
+    name: 'Frontend',
+    description: 'Interfaces and interactions',
+    items: ['JavaScript', 'HTML5', 'CSS3', 'React.js', 'Tailwind CSS']
+  },
+  {
+    number: '02',
+    name: 'Database',
+    description: 'Data and application logic',
+    items: ['SQL']
+  },
+  {
+    number: '03',
+    name: 'Languages',
+    description: 'Programming languages',
+    items: ['Python', 'C++', 'Java']
+  },
+  {
+    number: '04',
+    name: 'Design',
+    description: 'Creative design tools',
+    items: ['Figma']
+  },
+  {
+    number: '05',
+    name: 'Tools',
+    description: 'Version control and workflows',
+    items: ['Git', 'GitHub', 'VS Code', 'CLI']
+  }
 ];
 
 function Header({ theme, onToggleTheme, onNavigate }) {
@@ -159,24 +204,36 @@ function Header({ theme, onToggleTheme, onNavigate }) {
 }
 
 function Hero() {
+  const roles = ['Frontend Developer', 'Designer', 'Photographer'];
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setRoleIndex((current) => (current + 1) % roles.length);
+    }, 2200);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="hero reveal">
       <div className="hero-inner">
-        <p className="hero-eyebrow">Frontend developer</p>
+        <p className="hero-eyebrow">
+          <span className="hero-role-window" aria-live="polite">
+            <span key={roleIndex} className="hero-role">{roles[roleIndex]}</span>
+          </span>
+        </p>
         <h1>Hey, <span>I'm Gulshan.</span></h1>
         <p className="hero-bio">
-          I like building for the web and turning rough ideas into working projects. Most of my work uses HTML, CSS,
-          and JavaScript, and I’m always picking up something new along the way.
+          I’m a frontend developer who loves turning ideas into clean, thoughtful digital experiences.
+          I enjoy building modern interfaces with HTML, CSS, and JavaScript, while constantly exploring
+          better ways to make the web feel simple and alive. Beyond code, I’m deeply interested in
+          photography and creative work—capturing moments, playing with light, and finding fresh
+          perspectives that inspire how I design and build.
         </p>
         <div className="hero-btns">
-          <a href="#projects" className="btn-primary" aria-label="View featured projects">
-            <span className="button-label">View Projects</span><i className="ri-arrow-right-line" aria-hidden="true"></i>
-          </a>
           <a href={resumeFile} target="_blank" rel="noopener noreferrer" className="resume-link" aria-label="Open resume in a new tab">
             <i className="ri-file-user-line" aria-hidden="true"></i><span className="button-label">Resume</span>
-          </a>
-          <a href="https://github.com/Coddiction-101" target="_blank" rel="noopener noreferrer" className="github-link" aria-label="Visit Gulshan's GitHub profile">
-            <i className="ri-github-line" aria-hidden="true"></i><span className="button-label">GitHub</span>
           </a>
         </div>
       </div>
@@ -218,7 +275,24 @@ function Skills() {
         <h2 className="skills-title" id="skills-title">Tech Stack</h2>
         <p className="tech-stack">The tools behind my projects.</p>
       </div>
-      <CrystalField />
+      <div className="tech-category-list">
+        {technologyCategories.map((category) => (
+          <article className="tech-category" key={category.name}>
+            <div className="tech-category-index" aria-hidden="true">{category.number}</div>
+            <div className="tech-category-heading">
+              <h3>{category.name}</h3>
+              <p>{category.description}</p>
+            </div>
+            <ul className="tech-category-items" aria-label={`${category.name} technologies`}>
+              {category.items.map((item) => (
+                <li key={item}>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
@@ -540,7 +614,7 @@ function ProjectFilters({ filter, onFilter }) {
   return (
     <div className="projects-filters" aria-label="Filter projects">
       <div className="project-filter-group" aria-label="Project type">
-        {[['all', 'All'], ['other', 'Others']].map(([value, label]) => (
+        {[['all', 'All'], ['web', 'Web'], ['other', 'Others']].map(([value, label]) => (
           <button key={value} type="button" className={filter === value ? 'is-selected' : ''} onClick={() => onFilter(value)}>{label}</button>
         ))}
       </div>
@@ -569,130 +643,10 @@ function Projects({ onOpen }) {
 
 function ProjectsPage({ route, onNavigate, onOpen }) {
   const [filter, setFilter] = useState('all');
-  const [activeCard, setActiveCard] = useState(-1);
-  const tickerRef = useRef(null);
-  const cardRefs = useRef([]);
-  const dragState = useRef({ active: false, startX: 0, positions: [] });
   const selected = projects.find((project) => slugify(project.name) === route.slug);
   const visibleProjects = projects.filter((project) => filter === 'all' || project.group === filter);
   const projectIndex = selected ? projects.indexOf(selected) : -1;
   const stepProject = (direction) => onOpen(projects[(projectIndex + direction + projects.length) % projects.length]);
-
-  useEffect(() => {
-    if (selected || !tickerRef.current) return undefined;
-    const container = tickerRef.current;
-    const cards = cardRefs.current.slice(0, visibleProjects.length);
-    if (!cards.length || cards.some((card) => !card)) return undefined;
-    const gap = 22;
-    const positions = [];
-    const widths = cards.map((card) => card.getBoundingClientRect().width);
-    const drag = dragState.current;
-    const resetPositions = () => {
-      let nextPosition = 0;
-      cards.forEach((card, index) => {
-        positions[index] = nextPosition;
-        nextPosition += widths[index] + gap;
-      });
-    };
-    let frame = 0;
-    let lastTime = performance.now();
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const placeCards = () => cards.forEach((card, index) => { card.style.transform = `translate3d(${positions[index]}px, -50%, 0)`; });
-    const updateCenterCard = () => {
-      const centerX = container.clientWidth / 2;
-      let nearest = -1;
-      let nearestDistance = Infinity;
-      positions.forEach((position, index) => {
-        const distance = Math.abs(position + widths[index] / 2 - centerX);
-        if (distance < nearestDistance) {
-          nearestDistance = distance;
-          nearest = index;
-        }
-      });
-      const focused = nearestDistance <= widths[nearest] * 0.58 ? nearest : -1;
-      setActiveCard((current) => current === focused ? current : focused);
-    };
-    if (reducedMotion) return undefined;
-    resetPositions();
-    placeCards();
-    updateCenterCard();
-    const scrollCards = (event) => {
-      const amount = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
-      if (!amount) return;
-      event.preventDefault();
-      positions.forEach((_, index) => { positions[index] -= amount; });
-      placeCards();
-      updateCenterCard();
-    };
-    const onResize = () => {
-      cards.forEach((card, index) => { widths[index] = card.getBoundingClientRect().width; });
-      resetPositions();
-      placeCards();
-      updateCenterCard();
-    };
-    window.addEventListener('resize', onResize);
-    const animate = (time) => {
-      const delta = Math.min(time - lastTime, 40);
-      lastTime = time;
-      if (drag.active) {
-        frame = window.requestAnimationFrame(animate);
-        return;
-      }
-      const containerWidth = container.clientWidth;
-      cards.forEach((card, index) => {
-        let next = positions[index] + delta * 0.028;
-        const width = widths[index];
-        if (next > containerWidth + gap) {
-          let leftmost = Infinity;
-          positions.forEach((position, otherIndex) => {
-            if (otherIndex !== index && position < leftmost) leftmost = position;
-          });
-          next = Number.isFinite(leftmost) ? leftmost - width - gap : -width - gap;
-        }
-        positions[index] = next;
-      });
-      placeCards();
-      updateCenterCard();
-      frame = window.requestAnimationFrame(animate);
-    };
-    frame = window.requestAnimationFrame(animate);
-    const startDrag = (event) => {
-      if (event.button !== 0 || event.target.closest('a, button')) return;
-      drag.active = true;
-      drag.startX = event.clientX;
-      drag.positions = [...positions];
-      container.classList.add('is-dragging');
-      container.setPointerCapture(event.pointerId);
-    };
-    const moveDrag = (event) => {
-      if (!drag.active) return;
-      event.preventDefault();
-      const distance = event.clientX - drag.startX;
-      positions.forEach((_, index) => { positions[index] = drag.positions[index] + distance; });
-      placeCards();
-      updateCenterCard();
-    };
-    const stopDrag = (event) => {
-      if (!drag.active) return;
-      drag.active = false;
-      container.classList.remove('is-dragging');
-      if (container.hasPointerCapture(event.pointerId)) container.releasePointerCapture(event.pointerId);
-    };
-    container.addEventListener('pointerdown', startDrag);
-    container.addEventListener('pointermove', moveDrag);
-    container.addEventListener('pointerup', stopDrag);
-    container.addEventListener('pointercancel', stopDrag);
-    container.addEventListener('wheel', scrollCards, { passive: false });
-    return () => {
-      window.cancelAnimationFrame(frame);
-      window.removeEventListener('resize', onResize);
-      container.removeEventListener('pointerdown', startDrag);
-      container.removeEventListener('pointermove', moveDrag);
-      container.removeEventListener('pointerup', stopDrag);
-      container.removeEventListener('pointercancel', stopDrag);
-      container.removeEventListener('wheel', scrollCards);
-    };
-  }, [filter, selected, visibleProjects.length]);
 
   return (
     <main className="projects-page">
@@ -717,20 +671,41 @@ function ProjectsPage({ route, onNavigate, onOpen }) {
             <div className="project-detail-section"><h3>What it’s for</h3><p>{selected.useCase}</p></div>
             <div className="project-detail-section"><h3>Stack</h3><ul className="project-tech-list">{selected.stack.map((item) => <li key={item}>{item}</li>)}</ul></div>
             <div className="project-detail-links">
-              {selected.demo && <a href={selected.demo} target="_blank" rel="noopener noreferrer">Open live project <i className="ri-arrow-up-right-line" aria-hidden="true"></i></a>}
-              <a href={selected.repo} target="_blank" rel="noopener noreferrer">View source <i className="ri-github-line" aria-hidden="true"></i></a>
+              {selected.demo && <a className="project-action" href={selected.demo} target="_blank" rel="noopener noreferrer"><span>Live demo</span><i className="ri-arrow-up-right-line" aria-hidden="true"></i></a>}
+              <a className="project-action" href={selected.repo} target="_blank" rel="noopener noreferrer"><span>GitHub</span><i className="ri-github-line" aria-hidden="true"></i></a>
             </div>
             <div className="project-pagination"><button type="button" onClick={() => stepProject(-1)}><i className="ri-arrow-left-line" aria-hidden="true"></i> Previous</button><button type="button" onClick={() => stepProject(1)}>Next <i className="ri-arrow-right-line" aria-hidden="true"></i></button></div>
           </div>
         </article>
       ) : (
-        <>
-          <div className="projects-orbit" aria-label="Floating project gallery; drag, swipe, or scroll to browse" ref={tickerRef}>
-            {visibleProjects.map((project, index) => <ProjectCard key={project.name} project={project} cardRef={(element) => { cardRefs.current[index] = element; }} onOpen={onOpen} isActive={activeCard === index} isDimmed={activeCard >= 0 && activeCard !== index} />)}
-            {!visibleProjects.length && <p className="project-empty">No projects in this stack yet.</p>}
-          </div>
-          <p className="project-page-note">The centered card shows its stack and live link · drag or scroll to browse.</p>
-        </>
+        <div className="project-list" aria-label="Project list">
+          {visibleProjects.map((project, index) => (
+            <article className="project-row" key={project.name}>
+              <div className="project-row-index">{String(index + 1).padStart(2, '0')}</div>
+              <div className="project-row-intro">
+                <button className="project-row-name" type="button" onClick={() => onOpen(project)}>
+                  {project.name}
+                </button>
+                <p>{project.shortDescription}</p>
+                <div className="project-row-links">
+                  {project.demo && <a className="project-action" href={project.demo} target="_blank" rel="noopener noreferrer"><span>Live demo</span><i className="ri-arrow-up-right-line" aria-hidden="true"></i></a>}
+                  <a className="project-action" href={project.repo} target="_blank" rel="noopener noreferrer"><span>GitHub</span><i className="ri-github-line" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div className="project-row-details">
+                <ol className="project-point-list">
+                  {project.keyPoints.map((point) => (
+                    <li key={point}><span aria-hidden="true"></span><p>{point}</p></li>
+                  ))}
+                </ol>
+                <ul className="project-row-tech" aria-label={`${project.name} technologies`}>
+                  {project.stack.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))}
+          {!visibleProjects.length && <p className="project-empty">No projects in this stack yet.</p>}
+        </div>
       )}
     </main>
   );
