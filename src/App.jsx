@@ -38,7 +38,7 @@ const projects = [
     description: 'A structured productivity dashboard built to help you focus deeply, manage task priorities, and track your deep work sessions — without the noise.',
     shortDescription: 'A calm dashboard for deep work and planning.',
     keyPoints: ['Session-based focus tracking', 'Tasks organized by daily priority', 'Progress shown without dashboard clutter'],
-    demo: 'https://pulse-eight-phi-48.vercel.app',
+    demo: 'https://focusforge-deep-work.vercel.app/',
     repo: 'https://github.com/Coddiction-101/SideQuest/tree/Main/FocusForge',
     group: 'web',
     stack: ['React.js', 'Tailwind CSS'],
