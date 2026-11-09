@@ -739,7 +739,7 @@ function Contact() {
   );
 }
 
-function useRevealAnimations() {
+function useRevealAnimations(pageType) {
   useEffect(() => {
     const elements = document.querySelectorAll('.reveal');
     if (!('IntersectionObserver' in window)) {
@@ -758,7 +758,7 @@ function useRevealAnimations() {
 
     elements.forEach((element) => observer.observe(element));
     return () => observer.disconnect();
-  }, []);
+  }, [pageType]);
 }
 
 function AnimatedCursor() {
@@ -849,7 +849,7 @@ function App() {
     return () => window.removeEventListener('scroll', updateProgress);
   }, []);
 
-  useRevealAnimations();
+  useRevealAnimations(route.type);
 
   return (
     <>
