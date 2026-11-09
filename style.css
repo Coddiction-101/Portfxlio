@@ -974,7 +974,7 @@ nav ul li a:hover {
 .project-orbit-caption > span { display: -webkit-box; overflow: hidden; color: rgba(255,255,255,.76); font: .76rem/1.55 "Playfair Display", sans-serif; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .project-open-mark { position: absolute; top: 16px; right: 17px; color: rgba(255,255,255,.85); font-size: 1.15rem; transition: transform 180ms ease; }
 .project-orbit-inner:hover .project-open-mark { transform: translate(3px,-3px); }
-.project-art-focusforge::before { background: linear-gradient(145deg, rgba(122,81,42,.62), rgba(29,25,23,.48) 50%, rgba(11,11,11,.95)); }
+.project-art-focusforge::before { background: linear-gradient(145deg, rgba(235,231,220,.3), rgba(31,30,27,.56) 50%, rgba(11,11,11,.95)); }
 .project-art-scheduler::before { background: linear-gradient(145deg, rgba(66,95,78,.64), rgba(24,30,27,.45) 50%, rgba(10,12,10,.96)); }
 .project-art-banking::before { background: linear-gradient(145deg, rgba(66,77,119,.62), rgba(25,26,34,.48) 50%, rgba(10,10,13,.96)); }
 .project-art-flowboard::before { background: linear-gradient(145deg, rgba(114,68,91,.63), rgba(31,24,29,.46) 50%, rgba(12,10,12,.96)); }

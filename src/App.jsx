@@ -34,15 +34,15 @@ const projects = [
   },
   {
     name: 'FocusForge',
-    alt: 'FocusForge — Productivity Dashboard',
-    description: 'A structured productivity dashboard built to help you focus deeply, manage task priorities, and track your deep work sessions — without the noise.',
-    shortDescription: 'A calm dashboard for deep work and planning.',
-    keyPoints: ['Session-based focus tracking', 'Tasks organized by daily priority', 'Progress shown without dashboard clutter'],
+    alt: 'FocusForge — Minimal Deep-Work Timer',
+    description: 'A minimal deep-work timer for choosing a task, setting a focus duration, and tracking completed sessions. Timer state and session history stay in local storage, with optional breaks and completion alerts.',
+    shortDescription: 'A quiet timer for focused work and session progress.',
+    keyPoints: ['Adjustable focus timer with named tasks', 'Optional focus-to-break cycles and completion alerts', 'Editable seven-day history with daily and weekly summaries'],
     demo: 'https://coddiction-101.github.io/SideQuest/FocusForge/',
     repo: 'https://github.com/Coddiction-101/SideQuest/tree/Main/FocusForge',
     group: 'web',
-    stack: ['React.js', 'Tailwind CSS'],
-    useCase: 'A personal workspace for setting priorities, protecting deep-work time, and checking progress at a glance.',
+    stack: ['React', 'JavaScript', 'CSS'],
+    useCase: 'Set a task and focus duration, then review recent sessions and daily or weekly totals without creating an account.',
     imageTone: 'focusforge'
   },
   {
